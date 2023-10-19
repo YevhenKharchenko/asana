@@ -51,7 +51,7 @@ button {
 /* ==========HEADER========== */
 
 .header {
-  background: #edf1f2;
+  background: linear-gradient(#edf1f2, #ffffff);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -746,7 +746,7 @@ button {
 .footer-top {
   display: flex;
   padding-bottom: 80px;
-  padding-left: 30px;
+  padding-left: 15px;
   max-width: 1342px;
   padding-right: 15px;
   margin-left: auto;
@@ -754,7 +754,7 @@ button {
 }
 
 .footer-logo-link {
-  margin-right: 66px;
+  margin-right: 51px;
 }
 
 .footer-logo-img {
@@ -762,6 +762,7 @@ button {
 
 .footer-list-wrapper {
   width: 219px;
+  padding-left: 15px;
 }
 
 .footer-list-name {
@@ -796,9 +797,9 @@ button {
 .footer-bottom-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding-left: 124px;
-  padding-right: 129px;
+  justify-content: space-between;
+  padding-left: 177px;
+  padding-right: 70px;
   max-width: 1342px;
   margin-left: auto;
   margin-right: auto;
