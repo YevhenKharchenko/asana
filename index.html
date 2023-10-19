@@ -50,10 +50,15 @@
             </li>
           </ul>
         </nav>
-        <a class="header-globe-link" href="">globe</a>
-        <a class="header-contact-link" href="">Contact Sales</a>
-        <a class="header-log-link" href="">Log In</a>
-        <button class="header-btn" type="button">Try for free</button>
+        <div class="header-link-wrapper">
+          <a class="header-globe-link" href=""
+            ><svg class="header-globe-icon" width="26" height="26">
+              <use href="./images/icons.svg#icon-globe"></use></svg
+          ></a>
+          <a class="header-contact-link" href="">Contact Sales</a>
+          <a class="header-log-link" href="">Log In</a>
+          <button class="header-btn" type="button">Try for free</button>
+        </div>
       </div>
     </header>
 
@@ -120,7 +125,36 @@
 
       <section class="slides">
         <div class="container">
-          <div class="slides-pink-container"></div>
+          <button class="slides-btn-top" type="button">
+            <img
+              class="slides-btn-img"
+              src="./images/Frame.svg"
+              alt=""
+              width="108"
+              height="70"
+            /></button
+          ><button class="slides-btn-bottom" type="button">
+            <img
+              class="slides-btn-img"
+              src="./images/Frame.svg"
+              alt=""
+              width="108"
+              height="70"
+            />
+          </button>
+          <div class="slides-pink-container">
+            <div class="slides-pink-arrow-wrapper">
+              <a class="slides-arrow-link first-arrow" href=""
+                ><svg class="slides-arrow" width="21" height="16">
+                  <use
+                    href="./images/icons.svg#icon-arrow-right"
+                  ></use></svg></a
+              ><a class="slides-arrow-link second-arrow" href=""
+                ><svg class="slides-arrow" width="21" height="16">
+                  <use href="./images/icons.svg#icon-arrow-right"></use></svg
+              ></a>
+            </div>
+          </div>
           <div class="slides-figma-container">
             <img
               class="slides-figma-img"
@@ -170,6 +204,13 @@
               height="438"
             />
             <div class="slides-foreclay-text-wrapper">
+              <img
+                class="slides-foreclay-logo"
+                src="./images/fireclay.png"
+                alt="Fireclay logo"
+                width="121"
+                height="30"
+              />
               <p class="slides-foreclay-text text">
                 With Asana, we save an estimated 50 hours per week that used to
                 be spent answering email and attending check-in meetings.
@@ -177,20 +218,29 @@
               <p class="slides-foreclay-author author">
                 Jamie Chappell — Creative Director
               </p>
-              <a class="slides-foreclay-link view" href=""
-                >View Fireclay Tile Case Study</a
-              ><a class="slides-arrow-link first-arrow" href=""
-                ><svg class="slides-arrow" width="21" height="16">
-                  <use
-                    href="./images/icons.svg#icon-arrow-right"
-                  ></use></svg></a
-              ><a class="slides-arrow-link second-arrow" href=""
-                ><svg class="slides-arrow" width="21" height="16">
-                  <use href="./images/icons.svg#icon-arrow-right"></use></svg
-              ></a>
+              <div class="slides-foreclay-arrow-wrapper">
+                <a class="slides-foreclay-link view" href=""
+                  >View Fireclay Tile Case Study</a
+                ><a class="slides-arrow-link first-arrow foreclay-arrow" href=""
+                  ><svg class="slides-arrow" width="21" height="16">
+                    <use
+                      href="./images/icons.svg#icon-arrow-right"
+                    ></use></svg></a
+                ><a class="slides-arrow-link second-arrow" href=""
+                  ><svg class="slides-arrow" width="21" height="16">
+                    <use href="./images/icons.svg#icon-arrow-right"></use></svg
+                ></a>
+              </div>
             </div>
           </div>
           <div class="slides-g-container">
+            <img
+              class="slides-g-logo"
+              src="./images/g2.png"
+              alt="G2 logo"
+              width="28"
+              height="30"
+            />
             <p class="slides-g-text text">
               Asana has been instrumental in enabling our team to grow by 6X
               this year and successfully scale our processes.
@@ -198,14 +248,13 @@
             <p class="slides-g-author author">
               Ryan Bonnici — Chief Marketing Officer
             </p>
-            <a class="slides-g-link view" href="">View G2 Case Study</a
-            ><a class="slides-arrow-link first-arrow" href=""
-              ><svg class="slides-arrow" width="21" height="16">
-                <use href="./images/icons.svg#icon-arrow-right"></use></svg></a
-            ><a class="slides-arrow-link second-arrow" href=""
-              ><svg class="slides-arrow" width="21" height="16">
-                <use href="./images/icons.svg#icon-arrow-right"></use></svg
-            ></a>
+            <div class="slides-g-arrow-wrapper">
+              <a class="slides-g-link view" href="">View G2 Case Study</a
+              ><a class="slides-arrow-link first-arrow g-arrow" href=""
+                ><svg class="slides-arrow" width="21" height="16">
+                  <use href="./images/icons.svg#icon-arrow-right"></use></svg
+              ></a>
+            </div>
           </div>
         </div>
       </section>
@@ -236,24 +285,63 @@
               />
             </div>
             <div class="features-text-wrapper">
-              <h3 class="features-subtitle">Plan better projects</h3>
-              <p class="features-timeline-text">
-                Use Timeline to create project plans with start dates and
-                dependencies so you can stay on schedule and hit your
-                deadlines—even as work changes.
-              </p>
-              <a class="features-timeline-link" href="">Learn about Timeline</a>
-              <ul class="features-list">
-                <li class="features-item">
-                  <p class="features-item-text">Kick off projects faster</p>
-                </li>
-                <li class="features-item">
-                  <p class="features-item-text">Report on Progress</p>
-                </li>
-                <li class="features-item">
-                  <p class="features-item-text">Control your work</p>
-                </li>
-              </ul>
+              <div class="features-list-wrapper">
+                <div class="features-plan-wrapper">
+                  <h3 class="features-subtitle">Plan better projects</h3>
+                  <a class="features-plan-arrow-link" href=""
+                    ><svg class="features-item-icon" width="11" height="7">
+                      <use href="./images/icons.svg#icon-arrow-down"></use></svg
+                  ></a>
+                </div>
+                <p class="features-timeline-text">
+                  Use Timeline to create project plans with start dates and
+                  dependencies so you can stay on schedule and hit your
+                  deadlines—even as work changes.
+                </p>
+                <div class="features-timeline-wrapper">
+                  <a class="features-timeline-link" href=""
+                    >Learn about Timeline</a
+                  ><a class="features-arrow-link" href=""
+                    ><svg class="features-arrow-icon" width="19" height="13">
+                      <use
+                        href="./images/icons.svg#icon-arrow-small"
+                      ></use></svg
+                    ><svg class="features-arrow-icon" width="19" height="13">
+                      <use
+                        href="./images/icons.svg#icon-arrow-small"
+                      ></use></svg
+                  ></a>
+                </div>
+                <ul class="features-list">
+                  <li class="features-item">
+                    <p class="features-item-text">Kick off projects faster</p>
+                    <a class="features-item-arrow-link" href=""
+                      ><svg class="features-item-icon" width="11" height="7">
+                        <use
+                          href="./images/icons.svg#icon-arrow-down"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="features-item">
+                    <p class="features-item-text">Report on Progress</p>
+                    <a class="features-item-arrow-link" href=""
+                      ><svg class="features-item-icon" width="11" height="7">
+                        <use
+                          href="./images/icons.svg#icon-arrow-down"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="features-item">
+                    <p class="features-item-text">Control your work</p>
+                    <a class="features-item-arrow-link" href=""
+                      ><svg class="features-item-icon" width="11" height="7">
+                        <use
+                          href="./images/icons.svg#icon-arrow-down"
+                        ></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -453,8 +541,17 @@
         </div>
         <div class="footer-bottom">
           <div class="footer-bottom-container">
-            <a class="footer-lang-link" href="">English</a
-            ><a class="footer-terms-link" href="">Terms & Privacy</a>
+            <div class="footer-lang-wrapper">
+              <a class="footer-globe-link" href=""
+                ><img
+                  src="./images/footer-globe.png"
+                  alt="Globe"
+                  width="40"
+                  height="41"
+              /></a>
+              <a class="footer-lang-link" href="">English</a>
+            </div>
+            <a class="footer-terms-link" href="">Terms & Privacy</a>
             <ul class="footer-soc-list">
               <li class="footer-soc-item">
                 <a class="footer-soc-link" href=""
